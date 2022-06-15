@@ -23,10 +23,10 @@ http:
   repeat: 5   # number of rechecks
   timeout: 1  # HTTP(s) timeout (sec) 
   sites:
-    - url: http://example.com/   # hosts for monitoring over HTTP or HTTPS with basic auth
+    - url: http://yandex.ru/   # hosts for monitoring over HTTP or HTTPS with basic auth
       elements:
         - YandexZen   # content(element) in the source code of the site page
-    - url: https://example1.com/ # hosts for monitoring over HTTP or HTTPS
+    - url: https://example.com/ # hosts for monitoring over HTTP or HTTPS
 
 icmp:
   count: 10         # number of ICMP requests in a ping packet
