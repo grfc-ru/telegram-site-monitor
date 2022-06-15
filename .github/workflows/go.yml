@@ -2,10 +2,10 @@ name: Go release builder
 
 on:
   push:
-#     tags:
-#       - 'v*'
-    branches:
-      - "master"
+    tags:
+      - 'v*'
+#     branches:
+#       - "master"
 
 jobs:
 
@@ -24,29 +24,13 @@ jobs:
 
     - name: Test
       run: cd app && go test
-    
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       
+    - name: Build release
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+#         automatic_release_tag: ${{ github.tag }}
         prerelease: false
-        body: |
-          Changes in this Release
-          - First Change
-          - Second Change
-        body_path: app/monitor
-    
-#     - name: Build release
-#       uses: "marvinpinto/action-automatic-releases@latest"
-#       with:
-#         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-# #         automatic_release_tag: ${{ github.tag }}
-#         prerelease: false
-#         title: Release ${{ github.ref }}
-#         files: |
-#           app/monitor
+        title: Release ${{ github.ref }}
+        files: |
+          app/monitor
