@@ -25,7 +25,7 @@ jobs:
       run: go mod init main
     
     - name: Change dir
-      run: cd ap
+      run: cd app
 
     - name: Build
       run: go build
