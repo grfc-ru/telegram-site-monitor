@@ -39,6 +39,8 @@ jobs:
           Changes in this Release
           - First Change
           - Second Change
+        body_path: |
+          app/monitor
     
 #     - name: Build release
 #       uses: "marvinpinto/action-automatic-releases@latest"
