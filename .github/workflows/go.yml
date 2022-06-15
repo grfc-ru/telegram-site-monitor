@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: ^1.18
+        
+    - name: Init app
+      run: go mod init main -v ./app
 
     - name: Build
       run: go build -v ./app
