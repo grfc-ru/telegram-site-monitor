@@ -27,9 +27,8 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: true
+#         automatic_release_tag: "latest"
+        prerelease: false
         title: "Development Build"
         files: |
-          ${{runner.workspace}}/app/monitor*
-          ${{runner.workspace}}/app/config.yaml
+          ${{runner.workspace}}/monitor
