@@ -2,9 +2,8 @@ name: Go release builder
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - "v*"
 
 jobs:
 
@@ -25,8 +24,8 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
+        # automatic_release_tag: "latest"
         prerelease: false
-        title: Release latest
+        title: Release ${{ github.tag }}
         files: |
           app/monitor
