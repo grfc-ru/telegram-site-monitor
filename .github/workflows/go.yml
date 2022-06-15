@@ -3,7 +3,7 @@ name: Go release builder
 on:
   push:
     tags:
-      - 'v.*'
+      - 'v*'
 
 jobs:
 
@@ -27,7 +27,7 @@ jobs:
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: ${{ github.tag }}
+#         automatic_release_tag: ${{ github.tag }}
         prerelease: false
         title: Release ${{ github.ref }}
         files: |
