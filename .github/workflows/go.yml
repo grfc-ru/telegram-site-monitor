@@ -18,8 +18,8 @@ jobs:
       with:
         go-version: ^1.18
            
-    - name: Init app
-      run: cd app && go mod init main
+#     - name: Init app
+#       run: cd app && go mod init main
 
     - name: Build
       run: cd app && go build
