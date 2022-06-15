@@ -19,10 +19,10 @@ jobs:
         go-version: ^1.18
            
     - name: Build
-      run: cd app && go get -u github.com/go-ping/ping && go get main && go build
+      run: cd app && go get main && go build
 
     - name: Test
-      run: go test -v ./app
+      run: cd app && go test
     
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@v3
