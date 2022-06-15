@@ -23,9 +23,12 @@ jobs:
         
     - name: Init app
       run: go mod init main
+    
+    - name: Change dir
+      run: cd ap
 
     - name: Build
-      run: ./app/go build
+      run: go build
 
     - name: Test
       run: go test -v ./app
