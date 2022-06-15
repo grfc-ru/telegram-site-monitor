@@ -18,11 +18,8 @@ jobs:
       with:
         go-version: ^1.18
            
-#     - name: Init app
-#       run: cd app && go mod init main
-
     - name: Build
-      run: cd app && rm go.mod && rm go.sum && go mod init main && go build
+      run: cd app && rm go.mod && go mod init main && go build
 
     - name: Test
       run: go test -v ./app
