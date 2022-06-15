@@ -1,4 +1,5 @@
 # Application for monitoring the availability and immutability of sites over Telegram bot
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/leech001/telegram-site-monitor/Publish%20Docker%20image?label=BUILD%20AND%20PUBLISH%20APPLICATION&logo=github) [![GitHub](https://img.shields.io/badge/Git-Hub-purple.svg)](https://github.com/leech001/telegram-site-monitor) [![Docker](https://img.shields.io/badge/Docker-hub-2496ed.svg)](https://hub.docker.com/r/leech001/telegram-site-monitor) [![License: WTFPL](https://img.shields.io/badge/license-WTFPL-brightgreen)](https://github.com/leech001/telegram-site-monitor/blob/master/LICENSE)  
 
 Go (golang) application for checking and monitoring nodes through HTTP and HTTPS requests to nodes with a response code check other than '200'. There is also an additional check of nodes via PING (ICMP).
 
