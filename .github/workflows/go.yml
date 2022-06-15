@@ -2,10 +2,10 @@ name: Go release builder
 
 on:
   push:
-    tags:
-      - 'v*'
-#     branches:
-#       - "master"
+#     tags:
+#       - 'v*'
+    branches:
+      - "master"
 
 jobs:
 
@@ -21,9 +21,6 @@ jobs:
            
     - name: Build
       run: cd app && go get main && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -tags netgo -ldflags '-w -extldflags "-static"' -o monitor
-
-    - name: Test
-      run: cd app && go test
        
     - name: Build release
       uses: "marvinpinto/action-automatic-releases@latest"
