@@ -38,7 +38,7 @@ type Config struct {
 func main() {
 	// Read config from yaml
 	config := Config{}
-	filename, _ := filepath.Abs("./config.yaml")
+	filename, _ := filepath.Abs("./conf/config.yaml")
 	yamlFile, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)

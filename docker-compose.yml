@@ -4,3 +4,5 @@ services:
     restart: always
     build:
       context: .
+    volumes:
+      - ./conf:/app/conf:ro
