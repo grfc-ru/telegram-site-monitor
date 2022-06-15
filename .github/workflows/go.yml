@@ -17,9 +17,12 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: ^1.18
+    
+    - name: Change dir
+      run: cd app
         
     - name: Init app
-      run: go mod init main -v ./app
+      run: go mod init main
 
     - name: Build
       run: go build -v ./app
