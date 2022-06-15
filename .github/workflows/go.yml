@@ -35,6 +35,10 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
+        body: |
+          Changes in this Release
+          - First Change
+          - Second Change
     
 #     - name: Build release
 #       uses: "marvinpinto/action-automatic-releases@latest"
