@@ -2,8 +2,10 @@ name: Go release builder
 
 on:
   push:
-    tags:
-      - 'v*'
+#     tags:
+#       - 'v*'
+    branches:
+      - "master"
 
 jobs:
 
@@ -29,8 +31,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.tag }}
-        release_name: Release ${{ github.tag }}
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
 #         body: |
 #           Changes in this Release
 #           - First Change
