@@ -27,12 +27,14 @@ func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 			if err != nil {
 				msg := tgbotapi.NewMessage(group, "Site "+site.Url+" HTTP get error")
 				bot.Send(msg)
+				break
 			}
 
 			bodyBytes, err := io.ReadAll(resp.Body)
 			if err != nil {
 				msg := tgbotapi.NewMessage(group, "Site "+site.Url+" HTTP get error")
 				bot.Send(msg)
+				break
 			}
 			body := string(bodyBytes)
 
@@ -47,6 +49,7 @@ func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 					msg := tgbotapi.NewMessage(group, "Site "+site.Url+" defaced. Element '"+element+"' not found.")
 					bot.Send(msg)
 					deface = true
+					break
 				}
 			}
 			if deface {

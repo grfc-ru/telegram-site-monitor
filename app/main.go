@@ -1,8 +1,8 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -39,7 +39,7 @@ func main() {
 	// Read config from yaml
 	config := Config{}
 	filename, _ := filepath.Abs("./conf/config.yaml")
-	yamlFile, err := ioutil.ReadFile(filename)
+	yamlFile, err := os.ReadFile(filename)
 	if err != nil {
 		panic(err)
 	}

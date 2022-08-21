@@ -1,2 +1,2 @@
-app/conf/config_test.yaml
 app/go.sum
+app/conf/config.yaml
