@@ -7,17 +7,10 @@ telegram:
 
 http:
   repeat: 5
-  timeout: 3
+  timeout: 30
+  delay: 1
   sites:
     - url: https://yandex.ru
       elements:
         - YandexZen
     - url: https://google.com
-
-icmp:
-  count: 10
-  timeout: 4
-  timedelay: 200
-  hosts:
-    - yandex.ru
-    - google.com
