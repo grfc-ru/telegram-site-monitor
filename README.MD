@@ -1,7 +1,7 @@
 # Application for monitoring the availability and immutability of sites over Telegram bot
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/leech001/telegram-site-monitor/Publish%20Docker%20image?label=BUILD%20AND%20PUBLISH%20APPLICATION&logo=github) [![GitHub](https://img.shields.io/badge/Git-Hub-purple.svg)](https://github.com/leech001/telegram-site-monitor) [![Docker](https://img.shields.io/badge/Docker-hub-2496ed.svg)](https://hub.docker.com/r/leech001/telegram-site-monitor) [![License: WTFPL](https://img.shields.io/badge/license-WTFPL-brightgreen)](https://github.com/leech001/telegram-site-monitor/blob/master/LICENSE)  
 
-Go (golang) application for checking and monitoring nodes through HTTP and HTTPS requests to nodes with a response code check other than '200'. There is also an additional check of nodes via PING (ICMP).
+Go (golang) application for checking and monitoring nodes through HTTP and HTTPS requests to nodes with a response code check other than '200'.
 
 ## Install and config
 Download the required repository;
@@ -22,19 +22,13 @@ telegram:
 
 http:
   repeat: 5   # number of rechecks
-  timeout: 1  # HTTP(s) timeout (sec) 
+  timeout: 30  # HTTP(s) timeout (sec)
+  delay: 1.5 # HTTP(s) time delay (sec)
   sites:
     - url: http://yandex.ru/   # hosts for monitoring over HTTP or HTTPS with basic auth
       elements:
         - YandexZen   # content(element) in the source code of the site page
     - url: https://example.com/ # hosts for monitoring over HTTP or HTTPS
-
-icmp:
-  count: 10         # number of ICMP requests in a ping packet
-  timeout: 4        # time out for ping error status (sec)
-  timedelay: 100    # time delay for ping warning status (ms) 
-  hosts:
-    - google.com    # hosts for monitoring over ICMP
 ```
 
 ## Run

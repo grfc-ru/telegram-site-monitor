@@ -14,7 +14,7 @@ import (
 func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 	Url      string
 	Elements []string
-}, timeout uint8, repeat uint8) {
+}, timeout uint8, repeat uint8, delay float64) {
 	client := http.Client{
 		Timeout: time.Duration(timeout) * time.Second,
 	}
@@ -23,9 +23,18 @@ func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 		deface := false
 		for i := 0; i < int(repeat); i++ {
 
+			start := time.Now()
 			resp, err := client.Get(site.Url)
+			elapsed := time.Since(start).Seconds()
+
 			if err != nil {
 				msg := tgbotapi.NewMessage(group, "Site "+site.Url+" HTTP get error")
+				bot.Send(msg)
+				break
+			}
+
+			if elapsed >= delay {
+				msg := tgbotapi.NewMessage(group, "Site "+site.Url+" HTTP delay "+strconv.FormatFloat(elapsed, 'f', 3, 32)+" sec.")
 				bot.Send(msg)
 				break
 			}
