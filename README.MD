@@ -3,6 +3,11 @@
 
 Go (golang) application for checking and monitoring nodes through HTTP and HTTPS requests to nodes with a response code check other than '200'.
 
+## Simple use
+1. Copy `example` folder
+2. Change `config.yaml`
+3. Run `sudo docker-compose up -d`
+
 ## Install and config
 Download the required repository;
 

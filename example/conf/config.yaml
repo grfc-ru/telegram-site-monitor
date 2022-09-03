@@ -1,0 +1,16 @@
+app:
+  update: 60
+
+telegram:
+  token: 244516775:AAGZUrt9eQjhGSsFFpbjyNA9su6gQU-Qs
+  group: -6596563379
+
+http:
+  repeat: 5
+  timeout: 30
+  delay: 1
+  sites:
+    - url: https://yandex.ru
+      elements:
+        - YandexZen
+    - url: https://google.com

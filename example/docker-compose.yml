@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  app:
+    image: leech001/telegram-site-monitor
+    restart: always
+    volumes:
+      - ./conf:/app/conf:ro
