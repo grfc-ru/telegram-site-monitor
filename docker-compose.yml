@@ -1,8 +1,7 @@
 version: "3.9"
 services:
   app:
+    image: leech001/telegram-site-monitor
     restart: always
-    build:
-      context: .
     volumes:
-      - ./conf:/app/conf:ro
+      - ./conf:/app/conf:ro

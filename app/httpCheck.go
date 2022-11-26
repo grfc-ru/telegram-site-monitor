@@ -62,7 +62,7 @@ func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 				}
 			}
 		}
-		if errorHTML >= int(repeat-1) {
+		if errorHTML >= int(repeat) {
 			msg := tgbotapi.NewMessage(group, "Site "+site.Url+" HTTP get error")
 			bot.Send(msg)
 			errorHTML = 0

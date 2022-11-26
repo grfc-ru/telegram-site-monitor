@@ -49,6 +49,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	// Debug Telegram bot
 	bot.Debug = true
 
 	// Running HTTP checker
