@@ -4,18 +4,17 @@
 Go (golang) application for checking and monitoring nodes through HTTP and HTTPS requests to nodes with a response code check other than '200'.
 
 ## Simple use
-1. Copy `example` folder
-2. Change `config.yaml`
-3. Run `sudo docker-compose up -d`
-
-## Install and config
 Download the required repository;
 
 ```bash
 $ git clone https://github.com/leech001/site-monitor.git
 ```
 
-Change dir to 'app' and edit config.yaml file;
+Change `conf/config.yaml`
+
+Run `sudo docker-compose up -d`
+
+## Configure
 
 ```yaml
 app:
@@ -34,12 +33,6 @@ http:
       elements:
         - YandexZen   # content(element) in the source code of the site page
     - url: https://example.com/ # hosts for monitoring over HTTP or HTTPS
-```
-
-## Run
-Change dir to root project and run docker container;
-```bash
-$ sudo docker-compose up -d --build
 ```
 
 ## Telegram BOT command
