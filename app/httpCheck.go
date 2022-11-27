@@ -2,6 +2,7 @@ package main
 
 import (
 	"io"
+	"log"
 	"net/http"
 	"strconv"
 	"strings"
@@ -24,7 +25,14 @@ func httpCheck(update uint16, bot *tgbotapi.BotAPI, group int64, site struct {
 		for i := 0; i < int(repeat); i++ {
 
 			start := time.Now()
-			resp, err := client.Get(site.Url)
+
+			req, err := http.NewRequest("GET", site.Url, nil)
+			if err != nil {
+				log.Fatalf("error: %v", err)
+			}
+			req.Header.Add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.3")
+			resp, err := client.Do(req)
+
 			elapsed := time.Since(start).Seconds()
 
 			if err != nil {

@@ -41,7 +41,7 @@ func main() {
 	// Parse yaml
 	err = yaml.Unmarshal(yamlFile, &config)
 	if err != nil {
-		log.Fatalf("error: %v", err)
+		panic(err)
 	}
 
 	// Telegram bot
@@ -51,7 +51,7 @@ func main() {
 	}
 
 	// Debug Telegram bot
-	bot.Debug = true
+	bot.Debug = false
 
 	// Running HTTP checker
 	for _, site := range config.Http.Sites {
