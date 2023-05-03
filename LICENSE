@@ -1,13 +1,61 @@
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                   Version 2, December 2004
 
-Copyright (C) 2022 Leech001 <leech001@gmail.com>
+END-USER LICENSE AGREEMENT
 
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+1.	Definitions
 
- 0. You just DO WHAT THE FUCK YOU WANT TO.
+The Licensor - The «General Radio Frequency Centre» Federal State Unitary Enterprise («GRFC»), means the owner of an exclusive right to the computer program, data bases (hereinafter, software products) and related documentation who has granted the right to a Licensee to use software products on the terms and conditions of the license;
+A Licensee means the end user, the person/entity that has obtained the right to use software products on the terms and conditions of an open license;
+The License means this License Agreement between the Licensor and the Licensee;
+The Program Source Code means software presented in the form of a text in the programming language suitable for modifying the software;
+The Object Code means software in the form of any code that is not the software’s source code;
+The Program means the “telegram-site-monitor” computer program and a specific version thereof; 
+A Modified Program means a computer program with changes of or additions to (modifications of) the Program, including modification of certain portions of the Program, made by the Licensee or by a third party at the Licensee’s request.   
+The Author means the individual whose creative work has produced the Program (even if the author has worked in a group of authors).
+
+2. The Rights Granted
+2.1. The purpose of this License is to legalize the royalty-free granting by the Licensor of the right to use the Program to the Licensee.
+2.2. The Licensee may use the Program in any way defined in the License and not forbidden by Russian laws (including modification and distribution of the Program) and to grant the Program and the right to use it to third parties, under a sublicense agreement or otherwise, in the original or modified form, during the valid period of the exclusive right to the Program in accordance with Russian laws, throughout the world.
+2.3. The Licensee may make and distribute copies of the Program or parts of the Program and a Modified Program in any volumes subject to the following conditions:
+a) when granting the Program or parts of the Program or a Modified Program, it shall provide a copy of the License (the text);
+b) a Modified Program shall contain all the information about the Licensor, the Author, copyright, patent, and trademark rights in the original form provided in the Program, except for information not related to any part of the Modified Program.
+2.4. The Licensee shall have no rights to the Program other than those expressly stated in the License. The Licensee undertakes not to take any actions with a view to obtaining other intellectual property rights (including patent rights) to the Program or components of the Program.
+2.5. The License does not grant a permission to use brand names, trademarks, service marks, or the Licensor’s or the Author’s software product names, except as required for describing the Program.
+2.6. The right to use the Program under the License is granted free of charge.
+2.7. The Licensee may use the Program for personal purposes only. The use of the Program for business purposes shall be forbidden.
+
+3. License Effective Date
+3.1. This License is an adhesion contract; it may be entered into by any means that makes it possible to establish reliably that the offer to enter into this License is made by the Licensor and the acceptance of the License terms is made by the Licensee, and:  
+a) this License or the License name and version and a link to a public Web page with the text of the License are given at the beginning of the Program Source Code or the portion thereof obtained by the Licensee from the Licensor;
+b) this License or the License name and version and a link to a public Web page with the text of the License are stated in the LICENSE file in the root directory of the data medium (folder, computer, or repository) that contains the Program;
+c) this License or the License name and version and a link to a public Web page with the text of the License are displayed as the Licensee downloads or first starts the Program;
+d) this License is made as a soft-copy or a hard-copy document and executed by the parties, provided that the License states the Program’s name and version.
+3.2. This License shall become effective when the Licensee expresses acceptance of the License terms and conditions. If the Licensee has not expressed acceptance of the License terms and conditions, the Licensee shall not obtain any rights under the License.
+3.3. The Licensee shall be deemed to have accepted the License terms and conditions when it performs any of the following actions:
+a) starts using the Program;
+b) accepts the License by ticking the relevant box or answers “yes” to the question about accepting the License in the pop-up box during installation or following a first start of the Program;
+c) signs a hard-copy or soft-copy License.
+3.4. The Licensor shall provide the Licensee with a full software source code of the Program or an opportunity to obtain it without any additional conditions, by downloading it from the Internet or otherwise. The software source code shall be protected by measures that make it impossible to probe into, make additions to, or modify the software source code.
+
+4. Use of the Program
+4.1. The Licensee may take any actions required for operation of the Program or a portion thereof, which includes having it recorded and stored in computer memory, modifying the Program for operation on the Licensee’s devices, and eliminating manifest errors.
+4.2. The Licensee may copy the Program (make one or more copies of the Program or a portion thereof in any physical form).
+4.3. The Licensee may explore, research or test the operation of the Program and adapt the Program for its purposes.
+4.4. The Licensee may distribute copies of the Program. The right shall include providing copies of the Program to any person on any conditions consistent with the License terms and conditions, subject to the provision that the Program Author’s personal non-property rights are inalienable and perpetual.
+4.5. The Licensee may adapt the Program and distribute its own modified version of the Program. The right to adapt the Program shall include having it translated into other languages or modifying it in other ways that would create a Modified Program. The right to distribute a Modified Program shall include providing copies of the Modified Program to any person within the rights under this License, subject to compliance with Section 2.3 of the License.
+4.6. The Licensee may place the Program or a Modified Program in the public domain, so the Program or the Modified Program can be accessed by any person from any location and at any time that may be selected by such person.
+
+5. Liability
+5.1. License Sections 5.2 through 5.5 may be modified by a separate agreement between the Parties. Any duties and liability that may be imposed on the Licensee shall not apply to the Program’s Author.
+5.2. The Program is provided to the Licensee on an “as is” basis, with all possible faults or errors that exist when a copy of the Program is received by the Licensee or develop later from causes that existed at the time of the Program copy’s receipt by the Licensee. The Licensor shall not be liable for the Program’s faults, shall have no obligation to correct such faults, and makes no warranty as to the Program’s merchantability and fitness for a particular purpose. All liability resulting from making a decision to use the Program (as well as to modify and distribute the Program) shall rest with the Licensee.
+5.3. The Licensor shall not be liable for any losses (including actual damages, lost profit, or any other losses) that may result from potential Program faults or errors, even if it is proved that the Licensor was aware or should have been aware of such faults or errors. In particular, the Licensor shall not be liable for the Licensee’s losses resulting from the Program’s malfunctioning or loss of usability.
+5.4. The Licensor shall have no obligation to correct Program faults or errors, whenever those are detected, to train the Licensee to use the Program, to render maintenance services to the Licensee, or to provide corrections or updates, new and modified versions of the Program to the Licensee.
+5.5. Neither party may claim damages or penalties from the other party or request sanctions to be imposed on the other party. The Licensee shall not be liable for actions of a sublicensee.
+
+6. Miscellaneous Provisions
+6.1. This License is non-exclusive. The Licensor shall retain the right to use the Program and may provide the right to use the Program to other persons on any conditions within the scope of the rights granted under the License.
+6.2. A court competent to resolve any disputes related to the License, including disputes arising from the making, performance, construction or validity of the License or certain provisions thereof shall be a court at the Licensor’s location.
+6.3. This License shall be governed by the laws of the Russian Federation.
+6.4. The right to use the Program shall be granted for as long as the exclusive right to the Program is valid.
+6.5. Program use reports shall not be provided to the Licensor.
+6.6. The Program shall be used in the territory of the Russian Federation.
